@@ -1,0 +1,381 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Ignite Shreveport - Bossier</title>
+  <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,700,600,300,200' rel='stylesheet' type='text/css'>
+  <style type="text/css">
+    * {
+      padding: 0;
+      margin: 0;
+      font-family: 'Titillium Web', sans-serif;
+    }
+
+    h1 {
+      margin-bottom: 32px;
+      font-size: 32px;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 15px 40px;
+      margin: 10px 0;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      -ms-border-radius: 3px;
+      -o-border-radius: 3px;
+      border-radius: 3px;
+      font-size: 16px;
+      text-transform: uppercase;
+      -webkit-text-decoration: none;
+      -moz-text-decoration: none;
+      -ms-text-decoration: none;
+      -o-text-decoration: none;
+      text-decoration: none;
+      -webkit-transition: 0.35s;
+      -moz-transition: 0.35s;
+      -ms-transition: 0.35s;
+      -o-transition: 0.35s;
+      transition: 0.35s;
+      -webkit-transition: 0.35s;
+      -moz-transition: 0.35s;
+      -ms-transition: 0.35s;
+      -o-transition: 0.35s;
+      transition: 0.35s;
+    }
+
+    .button.white {
+      color: #FFF;
+      border: solid 1px #FFF;
+    }
+
+    .button.white:hover {
+      color: #DE1F26;
+      background-color: #FFF;
+    }
+
+    .button.red {
+      color: #DE1F26;
+      border: solid 1px #DE1F26;
+    }
+
+    .button.red:hover {
+      color: #FFF;
+      background-color: #DE1F26;
+    }
+
+    section {
+      margin: 40px 0;
+    }
+
+    section .inner {
+      min-width: 720px;
+      max-width: 960px;
+      /*padding:20px 0;*/
+      margin: auto;
+    }
+
+    section .description-text {
+      width: 720px;
+      margin: 20px auto auto auto;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 30px;
+      color: #333;
+    }
+
+    #intro-hero {
+      padding: 40px 0;
+      margin-top: 0;
+      background-color: #333;
+      background-image: url('/assets/images/sbc-cityscape-background.png');
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -ms-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+
+    #intro-hero #intro-text {
+      margin-bottom: 35px;
+      font-size: 42px;
+      color: #FFF;
+      text-shadow: 0 1px 1px #000;
+    }
+
+    #intro-hero #ignite-stats {
+      width: 720px;
+      padding: 50px 0;
+      margin: auto;
+    }
+
+    #intro-hero #ignite-stats:after {
+      display: block;
+      clear: both;
+      content: '';
+    }
+
+    #intro-hero #ignite-stats h2 {
+      float: left;
+      margin: 0 35px;
+    }
+
+    #intro-hero #ignite-stats h2 span {
+      display: block;
+    }
+
+    #intro-hero #ignite-stats h2 .number {
+      width: 80px;
+      height: 80px;
+      margin: auto;
+      line-height: 80px;
+      font-size: 36px;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.5);
+      -webkit-border-radius: 100%;
+      -moz-border-radius: 100%;
+      -ms-border-radius: 100%;
+      -o-border-radius: 100%;
+      border-radius: 100%;
+    }
+
+    #intro-hero #ignite-stats h2 .descriptor {
+      font-size: 28px;
+      font-weight: 100;
+      color: #FFF;
+      text-align: center;
+    }
+
+    #intro-hero #date {
+      position: relative;
+      top: 40px;
+      padding: 15px 0;
+      font-weight: 400;
+      font-size: 24px;
+      text-align: center;
+      background-color: rgba(222, 31, 38, 0.5);
+      color: #EEE;
+    }
+
+    #what {
+      margin: 50px;
+    }
+
+    #what #what-topics-excerpt {
+      display: block;
+      padding-left: 44px;
+      border-left: solid 4px #DE1F26;
+      color: #DE1F26;
+      font-weight: bold;
+    }
+
+    #what #what-topics-excerpt:before {
+      display: block;
+      content: '';
+      width: 100%;
+      height: 45px;
+      margin-bottom: 24px;
+      background-position: center center;
+      background-repeat: no-repeat;
+      -webkit-background-size: 267px 45px;
+      -moz-background-size: 267px 45px;
+      -ms-background-size: 267px 45px;
+      -o-background-size: 267px 45px;
+      background-size: 267px 45px;
+      background-image: url('/assets/images/topics.png');
+    }
+
+    #speakers,
+    #organizers {
+      padding: 30px 0;
+      background-color: #DE1F26;
+    }
+
+    #speakers #speaker-list:after,
+    #organizers #organizer-list:after {
+      display: block;
+      clear: both;
+      content: '';
+    }
+
+    #speakers h1,
+    #organizers h1 {
+      color: #FFF;
+    }
+
+    #speakers .speaker,
+    #organizers .organizer {
+      /*float:left;*/
+      width: 250px;
+      margin: auto;
+    }
+
+    #speakers #apply-to-speak-button {
+      display: block;
+      width: 118px;
+      margin: auto;
+      margin-top: 24px;
+    }
+
+    #speakers .speaker .speaker-headshot,
+    #organizers .organizer .organizer-headshot {
+      display: block;
+      width: 150px;
+      height: 150px;
+      margin: auto auto 12px auto;
+      -webkit-border-radius: 100%;
+      -moz-border-radius: 100%;
+      -ms-border-radius: 100%;
+      -o-border-radius: 100%;
+      border-radius: 100%;
+      border: solid 1px #FFF;
+      -webkit-box-shadow: inset 0 0 3px 1px #555;
+      -moz-box-shadow: inset 0 0 3px 1px #555;
+      -ms-box-shadow: inset 0 0 3px 1px #555;
+      -o-box-shadow: inset 0 0 3px 1px #555;
+      box-shadow: inset 0 0 3px 1px #555;
+    }
+
+    #speakers .speaker .speaker-name,
+    #organizers .organizer .organizer-name {
+      text-align: center;
+      font-size: 21px;
+      font-weight: 400;
+      color: #EFEFEF;
+    }
+
+    #tickets #tickets-excerpt {
+      display: block;
+      padding-left: 44px;
+      border-left: solid 4px #DE1F26;
+      color: #DE1F26;
+      font-weight: bold;
+    }
+
+    #tickets #get-tickets-button {
+      display: block;
+      width: 150px;
+      margin: 12px auto auto auto;
+      text-align: center;
+    }
+
+    #sponsors #sponsor-logos {
+      margin-left: -80px;
+    }
+
+    #sponsors #sponsor-logos:after {
+      display: block;
+      clear: both;
+      content: '';
+    }
+
+    #sponsors #sponsor-logos .sponsor-logo {
+      float: left;
+      height: 50px;
+      /*padding:20px 40px;*/
+      margin-left: 80px;
+    }
+
+    #sponsors #sponsor-logos .sponsor-logo.button-holder {
+      height: 56px;
+    }
+
+    #sponsors #sponsor-logos #become-a-sponsor-button {
+      margin: 0;
+    }
+
+    #footer {
+      padding: 24px 48px;
+      background-color: rgba(222, 31, 38, 1);
+    }
+
+    #footer p {
+      font-size: 14px;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #FFF;
+    }
+  </style>
+</head>
+<body>
+  <section id="intro-hero">
+    <h1 id="intro-text">Ignite Shreveport - Bossier</h1>
+    <div id="ignite-stats">
+      <h2 id="cities-stat"><span class="number">2</span><span class="descriptor">Cities</span></h2>
+      <h2 id="community-stat"><span class="number">1</span><span class="descriptor">Community</span></h2>
+      <h2 id="speakers-stat"><span class="number">12</span><span class="descriptor">Speakers</span></h2>
+      <h2 id="hours-stat"><span class="number">2</span><span class="descriptor">Hours</span></h2>
+    </div>
+    <h3 id="date"><span>October 23, 2014</span> <span style="margin-left:15px;">7 - 9 PM</span><span style="display:block; font-size:80%; color:#DDD;">at The Bossier Arts Council</span></h3>
+  </section>
+  <section id="what">
+    <h1>What is Ignite Shreveport - Bossier</h1>
+    <p class="description-text">
+      Ignite Shreveport - Bossier is a night of rapid-fire talks that are meant to do 3 things - Enlighten you [about a topic], Inspire you [to take action], and Delight you [in an unexpected way].  Ignite talks are a chance for members of the community to "geek out" about topics that they are passionate about.
+      <br/>
+      <br/>
+      You'll be hearing from 12 speakers from the community. Each speaker has 20 auto-advancing slides(15 seconds per slide) to share a passion / topic of their's for 5 minutes.
+      <br/>
+      <br/>
+      <br/>
+      <span id="what-topics-excerpt">You'll hear about topics ranging from Startups to Art to Helping Others to Movies and everything in between.</span>
+      <br/>
+      <br/>
+      Ignite Shreveport - Bossier aims to rally the Shreveport - Bossier community around interesting ideas and to show that interesting ideas can come from anyone.
+    </p>
+  </section>
+  <section id="speakers">
+    <div id="speakers-inner" class="inner">
+      <h1>Speakers</h1>
+      <div id="speaker-list">
+        <div class="speaker" id="you-speaker">
+          <img class="speaker-headshot" src="/assets/images/you-white.png"/>
+          <a class="button white" id="apply-to-speak-button" href="https://docs.google.com/forms/d/1laGrB1XcZQdhh9XA7EibOrsGIsG6YWY251uq75a6e34/viewform">Apply To Speak</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="tickets">
+    <div class="inner" id="tickets-inner">
+      <h1>Tickets</h1>
+      <p class="description-text">
+        Ignite Shreveport - Bossier is open to the public, but we do sell tickets.  All of the money from ticket sales goes to our "charity of the night".
+        <br/>
+        <br/>
+        <span id="tickets-excerpt">For this event, our charity is the Foodbank of Northwest Louisiana.</span>
+      </p>
+      <br/>
+      <a class="button red" id="get-tickets-button" href="#">Get Tickets</a>
+    </div>
+  </section>
+  <section id="organizers">
+    <div id="organizers-inner" class="inner">
+      <h1>Organizers</h1>
+      <div id="organizer-list">
+        <div class="organizer">
+          <img class="organizer-headshot" src="http://m.c.lnkd.licdn.com/mpr/pub/image-9HrpZ_BmpvZ-I2UcHVKx5XXAX3Y8lmpcMDKV5bqdXqnncZF79HrVo4amXbKFcC6y_5JZ/justin-martin.jpg"/>
+          <h3 class="organizer-name">Justin Martin</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="sponsors">
+    <div id="sponsors-inner" class="inner">
+      <h1>Sponsors</h1>
+      <div id="sponsor-logos">
+        <img class="sponsor-logo" src="http://bossierarts.org/wordpress1/wp-content/uploads/2013/11/cropped-cropped-logo-copy.jpg"/>
+        <img class="sponsor-logo" src="http://www.cohab.org/images/mediakit/logos/cohab-colored_medium.png"/>
+        <div class="sponsor-logo button-holder">
+          <a class="button red" id="become-a-sponsor-button" href="https://docs.google.com/forms/d/1XNdK7z5CoqGhElR1HSGntFFybSVMrPyNziti6Zd2l9w/viewform">Become a Sponsor</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer id="footer">
+    <p>&copy; 2014 Ignite Shreveport - Bossier</p>
+  </footer>
+</body>
+</html>
