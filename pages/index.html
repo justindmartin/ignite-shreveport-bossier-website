@@ -295,6 +295,10 @@
       height: 50px;
       /*padding:20px 40px;*/
       margin-left: 80px;
+      -webkit-transition:0.2s;
+    }
+    #sponsors #sponsor-logos .sponsor-logo:hover{
+      height:60px;
     }
 
     #sponsors #sponsor-logos .sponsor-logo.button-holder {
@@ -388,9 +392,15 @@
     <div id="sponsors-inner" class="inner">
       <h1>Sponsors</h1>
       <div id="sponsor-logos">
-        <img class="sponsor-logo" src="/assets/images/sponsors/bac.png"/>
-        <img class="sponsor-logo" src="/assets/images/sponsors/cohab.png"/>
-        <img class="sponsor-logo" src="/assets/images/sponsors/pandabit.png"/>
+        <a class="sponsor-link" href="http://www.bossierarts.org/">
+          <img class="sponsor-logo" src="/assets/images/sponsors/bac.png"/>
+        </a>
+        <a class="sponsor-link" href="http://www.cohab.org/">
+          <img class="sponsor-logo" src="/assets/images/sponsors/cohab.png"/>
+        </a>
+        <a class="sponsor-link" href="http://www.pandabit.com/">
+          <img class="sponsor-logo" src="/assets/images/sponsors/pandabit.png"/>
+        </a>
         <div class="sponsor-logo button-holder">
           <a class="button red" id="become-a-sponsor-button" href="https://docs.google.com/forms/d/1XNdK7z5CoqGhElR1HSGntFFybSVMrPyNziti6Zd2l9w/viewform" target="_blank">Become a Sponsor</a>
         </div>
