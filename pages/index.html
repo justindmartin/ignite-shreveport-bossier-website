@@ -218,6 +218,16 @@
       padding:0 35px;
     }
 
+    #speakers .speaker-row,
+    #organizers .organizer-row{
+      margin-top:44px;
+    }
+
+    #speakers .speaker-row.no-margin-top,
+    #organizers .organizer-row.no-margin-top{
+      margin-top:0;
+    }
+
     #speakers #apply-to-speak-button {
       display: block;
       width: 118px;
@@ -354,24 +364,28 @@
     <div id="speakers-inner" class="inner">
       <h1>Speakers</h1>
       <div id="speaker-list">
-        <div class="speaker">
-          <img class="speaker-headshot" src="/assets/images/speakers/john-scott-thompson.jpg"/>
-          <h3 class="speaker-name">John-Scott Thompson</h3>
-          <span class="speaker-topic">E-Waste</span>
+        <div class="speaker-row no-margin-top">
+          <div class="speaker">
+            <img class="speaker-headshot" src="/assets/images/speakers/john-scott-thompson.jpg"/>
+            <h3 class="speaker-name">John-Scott Thompson</h3>
+            <span class="speaker-topic">E-Waste</span>
+          </div>
+          <div class="speaker">
+            <img class="speaker-headshot" src="/assets/images/speakers/mollie-corbett.jpg"/>
+            <h3 class="speaker-name">Mollie Corbett</h3>
+            <span class="speaker-topic">Loving Your City</span>
+          </div>
+          <div class="speaker">
+            <img class="speaker-headshot" src="/assets/images/speakers/matt-haynes.jpg"/>
+            <h3 class="speaker-name">Matt Haynes</h3>
+            <span class="speaker-topic">Hydroponics</span>
+          </div>
         </div>
-        <div class="speaker">
-          <img class="speaker-headshot" src="/assets/images/speakers/mollie-corbett.jpg"/>
-          <h3 class="speaker-name">Mollie Corbett</h3>
-          <span class="speaker-topic">Loving Your City</span>
-        </div>
-        <div class="speaker">
-          <img class="speaker-headshot" src="/assets/images/speakers/matt-haynes.jpg"/>
-          <h3 class="speaker-name">Matt Haynes</h3>
-          <span class="speaker-topic">Hydroponics</span>
-        </div>
-        <div class="speaker" id="you-speaker">
-          <img class="speaker-headshot" src="/assets/images/you-white.png"/>
-          <a class="button white" id="apply-to-speak-button" href="https://docs.google.com/forms/d/1laGrB1XcZQdhh9XA7EibOrsGIsG6YWY251uq75a6e34/viewform" target="_blank">Apply To Speak</a>
+        <div class="speaker-row">
+          <div class="speaker" id="you-speaker">
+            <img class="speaker-headshot" src="/assets/images/you-white.png"/>
+            <a class="button white" id="apply-to-speak-button" href="https://docs.google.com/forms/d/1laGrB1XcZQdhh9XA7EibOrsGIsG6YWY251uq75a6e34/viewform" target="_blank">Apply To Speak</a>
+          </div>
         </div>
       </div>
     </div>
