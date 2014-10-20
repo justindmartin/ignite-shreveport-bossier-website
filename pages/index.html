@@ -155,7 +155,7 @@
       text-align: center;
     }
 
-    #intro-hero #date {
+    #intro-hero #date-rsvp-container {
       position: relative;
       top: 40px;
       padding: 15px 0;
@@ -164,6 +164,24 @@
       text-align: center;
       background-color: rgba(222, 31, 38, 0.5);
       color: #EEE;
+    }
+    #intro-hero #date-rsvp-container-inner{
+      width: 542px;
+      margin: auto;
+    }
+    #intro-hero #date-rsvp-container #date-rsvp-container-inner #date{
+      float: left;
+      width: 279px;
+    }
+    #intro-hero #date-rsvp-container #date-rsvp-container-inner #rsvp-button{
+      float: left;
+      padding: 12px 36px;
+      margin-left: 45px;
+    }
+    #intro-hero #date-rsvp-container #date-rsvp-container-clear{
+      display:block;
+      clear:both;
+      content:'';
     }
 
     #what {
@@ -341,7 +359,15 @@
       <h2 id="speakers-stat"><span class="number">12</span><span class="descriptor">Speakers</span></h2>
       <h2 id="hours-stat"><span class="number">2</span><span class="descriptor">Hours</span></h2>
     </div>
-    <h3 id="date"><span>October 23, 2014</span> <span style="margin-left:15px;">7 - 9 PM</span><span style="display:block; font-size:80%; color:#DDD;">at The Bossier Arts Council</span></h3>
+    <div id="date-rsvp-container">
+      <div id="date-rsvp-container-inner">
+        <div id="date">
+          <span>October 23, 2014</span> <span style="margin-left:15px;">7 - 9 PM</span><span style="display:block; font-size:80%; color:#DDD;">at The Bossier Arts Council</span>
+        </div>
+        <a href="#" class="button white" id="rsvp-button" title="RSVP on Facebook">RSVP on Facebook</a>
+      </div>
+      <div id="date-rsvp-container-clear"></div>
+    </div>
   </section>
   <section id="what">
     <h1>What is Ignite Shreveport - Bossier</h1>
